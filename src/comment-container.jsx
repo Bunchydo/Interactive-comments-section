@@ -69,14 +69,14 @@ function Comment({
           <div className="likes-section">
             <img
               className={`plus ${isLiked ? "disabled" : ""}`}
-              src="../public/images/icon-plus.svg"
+              src="/images/icon-plus.svg"
               alt="plus"
               onClick={handleIncreaseLike}
             />
             <div className="like-number">{likeNumber}</div>
             <img
               className={`minus ${isDisliked ? "disabled" : ""}`}
-              src="../public/images/icon-minus.svg"
+              src="/images/icon-minus.svg"
               alt="minus"
               onClick={handleDecreaseLike}
             />
@@ -88,17 +88,17 @@ function Comment({
                     className="delete-button"
                     onClick={() => onDeleteComment(comment.id)}
                   >
-                    <img src="../public/images/icon-delete.svg" alt="delete" />
+                    <img src="/images/icon-delete.svg" alt="delete" />
                     Delete
                   </div>
                   <div className="edit-button" onClick={handleEditClick}>
-                    <img src="../public/images/icon-edit.svg" alt="edit" />
+                    <img src="/images/icon-edit.svg" alt="edit" />
                     Edit
                   </div>
                 </>
               ) : isCurrentUser && isEditing ? null : (
                 <div onClick={handleReplyClick}>
-                  <img src="../public/images/icon-reply.svg" alt="reply" />
+                  <img src="/images/icon-reply.svg" alt="reply" />
                   Reply
                 </div>
               )}
@@ -109,7 +109,7 @@ function Comment({
             <div className="profile-info-left">
               <img
                 className="profile-picture"
-                src="../public/images/avatars/image-amyrobson.png"
+                src="/images/avatars/image-amyrobson.png"
                 alt="profile"
               />
               <div className="profile-name">{comment.author}</div>
@@ -123,17 +123,17 @@ function Comment({
                     className="delete-button"
                     onClick={() => onDeleteComment(comment.id)}
                   >
-                    <img src="../public/images/icon-delete.svg" alt="delete" />
+                    <img src="/images/icon-delete.svg" alt="delete" />
                     Delete
                   </div>
                   <div className="edit-button" onClick={handleEditClick}>
-                    <img src="../public/images/icon-edit.svg" alt="edit" />
+                    <img src="/images/icon-edit.svg" alt="edit" />
                     Edit
                   </div>
                 </>
               ) : isCurrentUser && isEditing ? null : (
                 <div className="reply-desktop" onClick={handleReplyClick}>
-                  <img src="../public/images/icon-reply.svg" alt="reply" />
+                  <img src="/images/icon-reply.svg" alt="reply" />
                   Reply
                 </div>
               )}
@@ -163,7 +163,7 @@ function Comment({
       {isReplying && (
         <div className="comment-form-container reply-form">
           <img
-            src="../public/images/avatars/image-amyrobson.png"
+            src="/images/avatars/image-amyrobson.png"
             className="profile-picture"
             alt="User"
           />
@@ -358,7 +358,7 @@ export default function CommentContainer() {
 
       <div className="comment-form-container">
         <img
-          src="../public/images/avatars/image-amyrobson.png"
+          src="/images/avatars/image-amyrobson.png"
           className="profile-picture"
           alt="User"
         />
